@@ -1,0 +1,94 @@
+:root{
+    --main: #4d7ea8;
+    --sec:#f7af9d;
+}
+
+@font-face {
+    font-family: ops;
+    src: url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Honk&family=Pacifico&family=Rubik+Glitch+Pop&family=Workbench&display=swap");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(4, 9, 4, 0.534), rgba(4, 9, 30, 0.589)), url("../photo/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-nav {
+    background-color: var(--main) !important;
+}
+
+.logo{
+    width: 85px;
+    height: 55px;
+}
+
+.tech{
+    color: var(--sec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: "Black Ops One";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form_section{
+    width: 100%;
+    height: 87vh;
+}
+
+.form-container{
+    background-color: rgba(128, 128, 128, 0.633);
+    border-radius: 20px;
+    box-shadow: 2px -3px 2px black;
+    padding: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+footer{
+    background-color: var(--main);
+    color: var(--sec);
+}
+
+.megahd{
+    color: var(--sec);
+}
+
+.beso_footer{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.beso_name{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline var(--sec);
+}
+
+.blue {
+    color: #049ada;
+}
+
+.red {
+    color: #e71e07;
+}
+
+.yellow {
+    color: #fcd000;
+}
+
+.green {
+    color: #42b132;
+}
