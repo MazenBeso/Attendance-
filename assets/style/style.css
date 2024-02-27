@@ -47,13 +47,33 @@ body{
 .form-container{
     background-color: rgba(128, 128, 128, 0.633);
     border-radius: 20px;
-    box-shadow: 2px -3px 2px black;
+    box-shadow: 4px -3px 2px black;
     padding: 30px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+
+.comfirm,.submit{
+    background-color: var(--main);
+    color: wheat;
+}
+
+.comfirm:hover{
+    background-color:#4d7ea8a9;
+    color: white;
+}
+
+.submit:hover{
+    background-color: #4d7ea8a9;
+    color: white;
+}
+
+.text{
+    color: var(--main);
+}
+
 
 footer{
     background-color: var(--main);
