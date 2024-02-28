@@ -1,6 +1,9 @@
 :root{
-    --main: #4d7ea8;
-    --sec:#f7af9d;
+    --main: #265077;
+    --fonts:#802BB1;
+    --third:#2D283E;
+    --fourth:#4C495D;
+    --sec:#D1D7E0;
 }
 
 @font-face {
@@ -31,12 +34,21 @@ body{
 }
 
 .tech{
-    color: var(--sec);
+    color: wheat;
     -webkit-background-clip: text;
     background-clip: text;
     font-family: "Black Ops One";
     font-weight: 400;
     font-style: normal;
+}
+
+.form_section_student{
+    width: 100%;
+    height: 72.2vh;
+}
+.form_section_student_setNumber{
+    width: 100%;
+    height: 41vh;
 }
 
 .form_section{
@@ -61,12 +73,12 @@ body{
 }
 
 .comfirm:hover{
-    background-color:#4d7ea8a9;
+    background-color:#2650779f;
     color: white;
 }
 
 .submit:hover{
-    background-color: #4d7ea8a9;
+    background-color: #2650779f;
     color: white;
 }
 
@@ -74,6 +86,29 @@ body{
     color: var(--main);
 }
 
+.tabel_holder{
+    width: 100%;
+    height: 86.66vh;
+}
+
+th{
+    color: var(--fonts)!important;
+}
+
+td{
+    color: var(--main)!important;
+    font-weight: bold;
+}
+
+table,
+th,
+td {
+    border: 2px solid var(--main);
+}
+
+.icons{
+    font-size: 25px!important;
+}
 
 footer{
     background-color: var(--main);
@@ -84,17 +119,17 @@ footer{
     color: var(--sec);
 }
 
-.beso_footer{
+.beso_footer, .footer_titles{
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
 }
 
-.beso_name{
+.beso_name , .megahd_name{
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
-    text-decoration: underline var(--sec);
+    cursor: pointer;
 }
 
 .blue {
@@ -111,4 +146,25 @@ footer{
 
 .green {
     color: #42b132;
+}
+
+.footer_titles{
+    color: wheat;
+}
+
+.social{
+    color: yellow!important;
+}
+
+.social:hover{
+    color: rgba(128, 128, 128, 0.6)!important;
+}
+
+.cata {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.cata:hover {
+    color: #c1c8e4a9;
 }
