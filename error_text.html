@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Set Number</title>
+    <title>Error </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
     <nav class="navbar bg-body-tertiary top-nav container">
         <div class="container-fluid d-flex justify-content-center p-0 m-0 gap-3">
             <a class="navbar-brand p-0 m-0" href="#">
@@ -34,96 +35,16 @@
         </div>
     </nav>
 
-        <div class="container mt-3">
-            <h1 class="page_title">MADAFAKA</h1>
-        </div>
 
+    <div class="container mt-3">
+        <h1 class="page_title"></h1>
+    </div>
 
-    <section class="table-responsive-sm container">
-        <div class="d-flex justify-content-center align-items-center mt-5">
-            <table class="table text-center">
-                <colgroup>
-                    <col style="width: 40%;">
-                    <col style="width: 15%;">
-                    <col style="width: 20%;">
-                    <col style="width: 15%;">
-                    <col style="width: 10%;">
-                </colgroup>
-                <tr>
-                    <th>Coruse</th>
-                    <th>Lecture / Section</th>
-                    <th>From / To</th>
-                    <th>Lecture / Section Room</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="#"><i class="fa-solid fa-toggle-off text-danger icons"></i></a></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><i class="fa-solid fa-toggle-on text-success icons"></i></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href=""><i class="fa-solid fa-circle-check text-success icons"></i></a></td>
-                </tr>
-            </table>
-        </div>
-    </section>
+    <div class="container error_container d-flex justify-content-center align-items-center">
+        <h1 class="error_massege error"></h1>
+    </div>
 
-    <section class="container d-flex form_section_student_setNumber">
-        <form action="" method="POST" class="container d-flex justify-content-center align-items-center">
-            <div class="row d-flex justify-content-center align-items-center form-container">
-                <div class="col-sm-12 col-md-8 col-lg-8 d-flex flex-column justify-content-center gap-4">
-                    
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInput numberInput" placeholder="Type Only 7 True Numbers" name="industry_set_number" maxlength="7" oninput="validateNumberSna3a(this)">
-                        <label for="floatingInput">Enter Your Set Number</label>
-                        <p id="errorText" class="text-bg-danger mt-2 text-center rounded-3"></p>
-                    </div>
-
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn comfirm text-align-center" name="submit" id="success" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <i class="fa-solid fa-user-check pe-1"></i>Comfirm Attendance</button>
-                
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content popup">
-                                <div class="modal-header d-flex justify-content-center align-items-center">
-                                    <h1 class="modal-title fs-5 text" id="staticBackdropLabel">Attendance Done</h1>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center text">
-                                    Press Close To Comfirm The Attendance
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="submit" class="btn btn-danger justify-content-center" data-bs-dismiss="modal"
-                                        id="close" onclick="closePage()">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                <!-- <button type="submit" class="btn submit" onclick="closePage()">Submit</button> -->
-                </div>
-            </div>
-        </form>
-    </section>
-
-    <footer class="container pt-2 pb-3 d-flex justify-content-center">
+    <footer class="container pt-2 pb-3 d-flex justify-content-center fixed-bottom">
         <div class="row d-flex">
             <div class="col-sm-12 col-md-12 col-lg-12 d-flex">
                 <div>
@@ -165,4 +86,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 
-</html> 
+</html>
