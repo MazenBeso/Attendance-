@@ -138,8 +138,11 @@ footer{
     color: var(--sec);
 }
 
-.megahd{
-    color: var(--sec);
+.megahd_name{
+    color: rgb(78, 205, 255);
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    margin-top: 15px;
 }
 
 .beso_footer, .footer_titles{
@@ -153,6 +156,8 @@ footer{
     font-style: italic;
     font-weight: bold;
     cursor: pointer;
+    margin-bottom: 5px;
+    width: max-content;
 }
 
 
