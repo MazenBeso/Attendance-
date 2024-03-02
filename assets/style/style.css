@@ -5,6 +5,7 @@
     --fourth:#4C495D;
     --sec:#D1D7E0;
 }
+
 @font-face {
     font-family: ops;
     src: url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Honk&family=Pacifico&family=Rubik+Glitch+Pop&family=Workbench&display=swap");
@@ -15,19 +16,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     background-image: linear-gradient(rgba(4, 9, 4, 0.534), rgba(4, 9, 30, 0.589)), url("../photo/bg1.jpg");
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
 
-}
-.body_div {
-    min-height: 95vh;
-}
 .top-nav {
     background-color: var(--main) !important;
 }
@@ -36,6 +32,7 @@ body{
     width: 85px;
     height: 55px;
 }
+
 .tech{
     color: wheat;
     -webkit-background-clip: text;
@@ -52,9 +49,6 @@ body{
     font-family: "Black Ops One";
     font-weight: 400;
     font-style: normal;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
 }
 
 .form_section_student{
@@ -142,16 +136,10 @@ td {
 footer{
     background-color: var(--main);
     color: var(--sec);
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-.megahd_name{
-    color: rgb(78, 205, 255);
-    font-family: "Dancing Script", cursive;
-    font-weight: 900;
-    margin-top: 15px;
+.megahd{
+    color: var(--sec);
 }
 
 .beso_footer, .footer_titles{
@@ -165,8 +153,6 @@ footer{
     font-style: italic;
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 5px;
-    width: max-content;
 }
 
 
