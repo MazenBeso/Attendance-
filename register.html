@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Create A New Account</title>
     <link rel="icon" href="./assets/photo/7.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,9 +15,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Honk&family=Pacifico&family=Rubik+Glitch+Pop&family=Workbench&display=swap"
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+    <script src="assets/js/main.js"></script>
+
 </head>
 
 <body>
@@ -61,73 +62,89 @@
         <h1 class="page_title"></h1>
     </div>
 
-    <section>
-        <div class="alert_success mb-5">
-            <div>
-                <h3 class="text-uppercase"><i class="fa-solid fa-circle-check h3_icon"></i></h3>
-            </div>
-            <div>
-                <ul class="list-group bg-dark" style="list-style-type:circle;">
-                    <li class="bg-dark"></li>
-                    <li class="bg-dark"></li>
-                    <li class="bg-dark"></li>
-                    <li class="bg-dark"></li>
-                    <li class="bg-dark"></li>
-                </ul>
-            </div>
-            <div class="mt-3">
-                <p></p>
-            </div>
+        <div class="container mt-3">
+            <h1 class="page_title"></h1>
         </div>
-
-        <div class="alert_danger mb-5">
-            <div>
-                <h3 class="text-uppercase"><i class="fa-solid fa-triangle-exclamation h3_icon"></i></i></h3>
-            </div>
-            <div>
-                <ul class="list-group bg-dark" style="list-style-type:circle;">
-                    <li class="bg-dark"></li>
-                    <li class="bg-dark"></li>
-                    <li class="bg-dark"></li>
-                    <li class="bg-dark"></li>
-                    <li class="bg-dark"></li>
-                </ul>
-            </div>
-            <div class="mt-3">
-                <p></p>
-            </div>
-        </div>
-    </section>
-
-
-    <form action="" method="POST">
-            <div class="box mb-5">
-                <div class="login">
-                    <div class="loginBx">
-                        <h4><img src="../assets/photo/8.png" alt="" class="small-vision"> Login <img src="../assets/photo/8.png"
-                                alt="" class="small-vision"></h4>
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Enter Your UserName"
-                                name="industry_student_username">
-                            <label for="floatingInput" class="label">Username</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="password" class="form-control pass_confirmation" id="password" placeholder="Enter Your Password"
-                                name="industry_student_password" required>
-                            <label for="password" class="label">Password</label>
-                            <i class="toggle-password fas fa-eye-slash" onclick="togglePasswordVisibility('password')"></i>
-                        </div>
-                        <button type="submit" class="submit" id="loginBtn">Log In</button>
-                        <div class="group">
-                            <a href="forget.html" disabled>Forgot Password?</a>
-                            <a href="register.html">Create Account</a>
-                        </div>
-                    </div>
+        
+        <section>
+            <div class="alert_success mb-5">
+                <div>
+                    <h3 class="text-uppercase"><i class="fa-solid fa-circle-check h3_icon"></i></h3>
+                </div>
+                <div>
+                    <ul class="list-group bg-dark" style="list-style-type:circle;">
+                        <li class="bg-dark"></li>
+                        <li class="bg-dark"></li>
+                        <li class="bg-dark"></li>
+                        <li class="bg-dark"></li>
+                        <li class="bg-dark"></li>
+                    </ul>
+                </div>
+                <div class="mt-3">
+                    <p></p>
                 </div>
             </div>
-    </form>
+        
+            <div class="alert_danger mb-5">
+                <div>
+                    <h3 class="text-uppercase"><i class="fa-solid fa-triangle-exclamation h3_icon"></i></i></h3>
+                </div>
+                <div>
+                    <ul class="list-group bg-dark" style="list-style-type:circle;">
+                        <li class="bg-dark"></li>
+                        <li class="bg-dark"></li>
+                        <li class="bg-dark"></li>
+                        <li class="bg-dark"></li>
+                        <li class="bg-dark"></li>
+                    </ul>
+                </div>
+                <div class="mt-3">
+                    <p></p>
+                </div>
+            </div>
+        </section>
 
-    <footer class="container pt-2 pb-3 d-flex justify-content-center">
+<form action="" method="POST" id="loginForm">
+    <div class="box register_box mb-5">
+        <div class="register_login">
+            <div class="loginBx_register">
+                <h5 class="register_h4"><img src="../assets/photo/8.png" alt="" class="small-vision"> Register <img
+                        src="../assets/photo/8.png" alt="" class="small-vision"></h5>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="username" placeholder="Enter Your UserName"
+                        name="industry_student_username" required>
+                    <label for="username" class="label">Username</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control gloos" id="numberInput" name="gloos" maxlength="7"
+                        oninput="validateInput(this)" placeholder="أكتب رقم الجلوس">
+                    <label for="numberInput" class="label">ID</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control pass_confirmation" id="password"
+                        placeholder="Enter Your Password" name="industry_student_password" required>
+                    <label for="password" class="label">Password</label>
+                    <i class="toggle-password fas fa-eye-slash" onclick="togglePasswordVisibility('password')"></i>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control pass_confirmation" id="confirmPassword"
+                        placeholder="Confirm Your Password" name="industry_student_password_confirmation" required>
+                    <label for="confirmPassword" class="label">Confirm Password</label>
+                    <i class="toggle-password fas fa-eye-slash"
+                        onclick="togglePasswordVisibility('confirmPassword')"></i>
+                    <p id="errorMessage" class="text-danger"></p>
+                </div>
+                <button type="submit" class="create_account" id="loginBtn" disabled>Create Account</button>
+                <div class="groupAccount">
+                    <a href="sna3a_student_login.html">Have an Account?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+    <footer class="container pt-2 pb-3 mt-5 d-flex justify-content-center">
         <div class="row d-flex">
             <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-column">
                 <div class="first_footer_div">
@@ -205,7 +222,6 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="assets/fontawesome/all.min.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
