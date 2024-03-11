@@ -4,6 +4,12 @@ function validateInput(input) {
         input.value = input.value.slice(0, 7);
     }
 }
+function validateNID(input) {
+    input.value = input.value.replace(/\D/g, '')
+    if (input.value.length > 14) {
+        input.value = input.value.slice(0, 14);
+    }
+}
 
 function validateNumberLectureRoom(input) {
     var inputValue = input.value;

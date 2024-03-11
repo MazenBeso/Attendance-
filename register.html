@@ -87,7 +87,7 @@
         
             <div class="alert_danger mb-5">
                 <div>
-                    <h3 class="text-uppercase"><i class="fa-solid fa-triangle-exclamation h3_icon"></i></i></h3>
+                    <h3 class="text-uppercase"><i class="fa-solid fa-triangle-exclamation h3_icon"></i></h3>
                 </div>
                 <div>
                     <ul class="list-group bg-dark" style="list-style-type:circle;">
@@ -113,23 +113,28 @@
                 <div class="form-floating">
                     <input type="text" class="form-control" id="username" placeholder="Enter Your UserName"
                         name="industry_student_username" required>
-                    <label for="username" class="label">Username</label>
+                    <label for="username" class="label"><i class="fa-solid fa-user-graduate"></i> Username</label>
                 </div>
                 <div class="form-floating">
                     <input type="text" class="form-control gloos" id="numberInput" name="gloos" maxlength="7"
                         oninput="validateInput(this)" placeholder="أكتب رقم الجلوس">
-                    <label for="numberInput" class="label">ID</label>
+                    <label for="numberInput" class="label"><i class="fa-solid fa-id-badge"></i> ID</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control gloos" id="numberInput" name="gloos" maxlength="7"
+                        oninput="validateNID(this)" placeholder="أكتب رقم الجلوس">
+                    <label for="numberInput" class="label"><i class="fa-solid fa-address-card"></i> National ID</label>
                 </div>
                 <div class="form-floating">
                     <input type="password" class="form-control pass_confirmation" id="password"
                         placeholder="Enter Your Password" name="industry_student_password" required>
-                    <label for="password" class="label">Password</label>
+                    <label for="password" class="label"><i class="fa-solid fa-lock"></i> Password</label>
                     <i class="toggle-password fas fa-eye-slash" onclick="togglePasswordVisibility('password')"></i>
                 </div>
                 <div class="form-floating">
                     <input type="password" class="form-control pass_confirmation" id="confirmPassword"
                         placeholder="Confirm Your Password" name="industry_student_password_confirmation" required>
-                    <label for="confirmPassword" class="label">Confirm Password</label>
+                    <label for="confirmPassword" class="label"><i class="fa-solid fa-lock"></i> Confirm Password</label>
                     <i class="toggle-password fas fa-eye-slash"
                         onclick="togglePasswordVisibility('confirmPassword')"></i>
                     <p id="errorMessage" class="text-danger"></p>
