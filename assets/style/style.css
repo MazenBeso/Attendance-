@@ -203,6 +203,7 @@ body {
     font-size: 28px;
     color: #49d761;
 }
+
 .wrapper-success .card .icon-times {
     position: absolute;
     right: 25px;
@@ -279,7 +280,73 @@ body {
     font-size: 28px;
     color: #fdc220;
 }
+
 .wrapper-warning .card .icon-times {
+    position: absolute;
+    right: 25px;
+    font-size: 28px;
+    color: #c3c2c7;
+    cursor: pointer;
+}
+
+.wrapper-warning .card {
+    width: 720px;
+    height: 100px;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 75px;
+    border-left: 10px solid #fdc220;
+    border-radius: 3px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.wrapper-warning .card .subject {
+    margin-right: 180px;
+}
+.wrapper-warning .card .subject p {
+    color: #909092;
+}
+.wrapper-warning .card .icon {
+    position: absolute;
+    left: 25px;
+    font-size: 28px;
+    color: #fdc220;
+}
+
+.wrapper-warning .card .icon-times {
+    position: absolute;
+    right: 25px;
+    font-size: 28px;
+    color: #c3c2c7;
+    cursor: pointer;
+}
+.wrapper-danger .card {
+    width: 720px;
+    height: 100px;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 75px;
+    border-left: 10px solid #ff5959;
+    border-radius: 3px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.wrapper-danger .card .subject {
+    margin-right: 180px;
+}
+.wrapper-danger .card .subject p {
+    color: #909092;
+}
+.wrapper-danger .card .icon {
+    position: absolute;
+    left: 25px;
+    font-size: 28px;
+    color: #ff5959;
+}
+
+.wrapper-danger .card .icon-times {
     position: absolute;
     right: 25px;
     font-size: 28px;
