@@ -20,45 +20,79 @@
 
 <body>
 
-    <nav class="navbar bg-body-tertiary top-nav container">
-        <div class="container-fluid d-flex justify-content-center p-0 m-0 gap-3">
-
-            <div class="light-button">
-                <button class="bt">
-                    <div class="light-holder">
-                        <div class="dot"></div>
-                        <div class="light"></div>
+    <nav class="navbar navbar-dark bg-dark container-fluid">
+            <div class="container-fluid">
+                <a href="https://www.facebook.com/profile.php?id=100085885038638"
+                    class="d-flex justify-content-center align-items-center">
+                    <div class="light-button">
+                        <button class="bt">
+                            <div class="light-holder">
+                                <div class="dot"></div>
+                                <div class="light"></div>
+                            </div>
+                            <div class="button-holder">
+                                <img src="assets/photo/gam3a_logo.png" alt="" class="vision animate__animated animate__bounceInDown">
+                            </div>
+                        </button>
                     </div>
-                    <div class="button-holder">
-                        <img src="assets/photo/2.png" alt="" class="vision animate__animated animate__bounceInDown">
-                    </div>
+                    <h4 class="tech mt-3 ps-3">Information Technology</h4>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                    aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
-
-            <div>
-                <h3 class="tech animate__animated  animate__backInUp">Information Technology</h3>
-            </div>
-
-            <div class="light-button">
-                <button class="bt">
-                    <div class="light-holder">
-                        <div class="dot"></div>
-                        <div class="light"></div>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title tech" id="offcanvasDarkNavbarLabel">Information Technology</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
-                    <div class="button-holder">
-                        <img src="assets/photo/gam3a_logo.png" alt=""
-                            class="vision animate__animated animate__bounceInDown">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-primary" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-user-graduate"></i> Student Details
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark text-primary ps-2">
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-primary" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-square-plus"></i> Creatation
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item text-center text-primary" href="#">Create Lecture</a></li>
+                                    <li><a class="dropdown-item text-center text-primary" href="#">Create Section</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" aria-current="page" href="#"><i
+                                        class="fa-regular fa-calendar-days"></i> Supiler
+                                    Table</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-primary" aria-current="page" href="#"><i
+                                        class="fa-regular fa-calendar-days"></i> Today's Table</a>
+                            </li>
+                            <li class="mt-2">
+                                <a class="btn btn-outline-danger" href="#"><i class="fa-solid fa-right-from-bracket"></i> Log
+                                    out</a>
+                            </li>
+                        </ul>
                     </div>
-                </button>
+                </div>
             </div>
-        </div>
     </nav>
 
     <div class="container mt-3">
         <h1 class="page_title"></h1>
     </div>
 
-    <section>
+    <section class="d-flex justify-content-center align-items-center">
         <div class="attendance_success mb-5">
             <div>
                 <h3 class="text-uppercase"><i class="fa-solid fa-circle-check h3_icon"></i></h3>
@@ -68,17 +102,11 @@
                     <ul class="list-group bg-dark" style="list-style-type:circle;">
                         <li class="bg-dark mb-3" style="list-style-type:none;"><i class="fa-solid fa-share"></i>  Student Name</li>
                         <li class="bg-dark"></li>
-                        <li class="bg-dark"></li>
-                        <li class="bg-dark"></li>
-                        <li class="bg-dark"></li>
                     </ul>
                 </div>
                 <div class="attend_sec_col">
                     <ul class="list-group bg-dark" style="list-style-type:circle;">
                         <li class="bg-dark mb-3" style="list-style-type:none;"><i class="fa-solid fa-share"></i>  Student ID</li>
-                        <li class="bg-dark"></li>
-                        <li class="bg-dark"></li>
-                        <li class="bg-dark"></li>
                         <li class="bg-dark"></li>
                     </ul>
                 </div>

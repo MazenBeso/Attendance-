@@ -19,7 +19,35 @@
 
 <body>
 
-    <nav class="navbar bg-body-tertiary top-nav container">
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+            <a class="navbar-brand tech" href="#"><img src="assets/photo/gam3a_logo.png" alt="" class="logo">Information Technology</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title tech" id="offcanvasDarkNavbarLabel">Information Technology</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" aria-current="page" href="#">Today's Table</a>
+                    </li>
+                    <li class="mt-2">
+                        <a class="btn btn-outline-danger" href="#">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- <nav class="navbar bg-body-tertiary top-nav container">
         <div class="container-fluid d-flex justify-content-center p-0 m-0 gap-3">
     
             <div class="light-button">
@@ -56,9 +84,7 @@
                     <i class="fa-solid fa-user-graduate"></i> Student Details
                 </button>
                 <ul class="dropdown-menu">
-                    <li class="dropdown-item">Mazen Mohamed Ismail Ahmed Mostafa Mazen Gomma</li>
-                    <li class="dropdown-item">2320470</li>
-                    <li class="dropdown-item">first year</li>
+                    <li class="dropdown-item">Name : </li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
@@ -66,48 +92,48 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <div class="container mt-3">
         <h1 class="page_title">Student Table</h1>
     </div>
 
-        <div>
-            <div class="container">
-                <div class="wrapper-success mb-5">
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-check-circle"></i></div>
-                        <div class="subject">
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                        <div class="icon-times"><i class="fa-solid fa-circle-xmark"></i></div>
+    <div>
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="wrapper-success mb-5">
+                <div class="card">
+                    <div class="icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="subject">
+                        <h3></h3>
+                        <p></p>
                     </div>
-                </div>
-        
-                <div class="wrapper-info mb-5">
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-info-circle"></i></div>
-                        <div class="subject">
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                        <div class="icon-times"><i class="fa-solid fa-circle-xmark"></i></div>
-                    </div>
-                </div>
-        
-                <div class="wrapper-warning mb-5">
-                    <div class="card">
-                        <div class="icon"><i class="fas fa-exclamation-circle"></i></div>
-                        <div class="subject">
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                        <div class="icon-times"><i class="fa-solid fa-circle-xmark"></i></div>
-                    </div>
+                    <div class="icon-times"><i class="fa-solid fa-circle-xmark"></i></div>
                 </div>
             </div>
-        </div>
+    
+            <div class="wrapper-info mb-5">
+                <div class="card">
+                    <div class="icon"><i class="fas fa-info-circle"></i></div>
+                    <div class="subject">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                    <div class="icon-times"><i class="fa-solid fa-circle-xmark"></i></div>
+                </div>
+            </div>
+    
+            <div class="wrapper-warning mb-5">
+                <div class="card">
+                    <div class="icon"><i class="fas fa-exclamation-circle"></i></div>
+                    <div class="subject">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                    <div class="icon-times"><i class="fa-solid fa-circle-xmark"></i></div>
+                </div>
+            </div>
+            </div>
+    </div>
 
     <section class="table-responsive-sm container">
         <div class=" d-flex justify-content-center align-items-center">
